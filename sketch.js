@@ -27,15 +27,6 @@ function setup() {
 	  bob4 = new bob(520,650,80);
 	  bob5 = new bob(600,650,80);
 
-    var render = Render.create({
-      element: document.body,
-      engine: engine,
-      options: {
-        width: 1200,
-        height: 700,
-        wireframes: false
-      }
-    });
 
 	  rope1 = new rope(bob1.body,roof.body,-50*2,0);
 	  rope2 = new rope(bob2.body,roof.body,-25*2,0);
@@ -44,7 +35,7 @@ function setup() {
 	  rope5 = new rope(bob5.body,roof.body,50*2,0);
 
 	Engine.run(engine);
-  Render.run(render);
+  //Render.run(render);
   
 }
 
